@@ -10,6 +10,5 @@ cache:
 sudo: false
 install:
   - npm install
-# script:
-#   - npm run lint
-#   - npm test
+script:
+  - npm test
