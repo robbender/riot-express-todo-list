@@ -6,11 +6,12 @@ services:
   - mongodb
 install:
   - npm install
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: /bin/sh deploy.sh
-  on:
-    branch: master
-# script:
-#   - npm test
+# deploy:
+#   provider: script
+#   skip_cleanup: true
+#   script: /bin/sh deploy.sh
+#   on:
+#     branch: master
+script:
+  - npm run lint
+  - npm test
